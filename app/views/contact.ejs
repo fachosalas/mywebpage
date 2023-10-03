@@ -1,0 +1,36 @@
+<%- include('partials/header.ejs')%>
+    <h1><%= title %></h1>
+    <%- include('partials/nav.ejs')%>
+    <%- include('partials/main.ejs')%>
+    <p>
+        Contact Me!
+    </p>
+    
+    <div>
+        <span>Hugo Salas</span><br>
+        hsalasda@my.centennialcollege.ca<br>
+        Scarborough, ON Canada      
+    </div>
+    <form method="post" action="mailto:hsalasda@my.centennial.ca">
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" name="firstName" required="required">
+        <br>
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName" name="lastName" required="required">
+        <br>
+        <label for="myEmail">Email: </label>
+        <input type="email" id="myEmail" name="myEmail" size="35">
+        <br>
+        <label for="myPhone">Phone Number:</label>
+        <input type="tel" id="myPhone" name="myPhone">
+        <br>
+
+        <label for="message">Message: </label><br>
+        <textarea rows="2" cols="30" id="message" name="message" placeholder="Please enter your message." 
+        required="required"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+<%- include('partials/footer.ejs')%>
